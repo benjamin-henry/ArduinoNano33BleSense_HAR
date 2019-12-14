@@ -21,14 +21,6 @@ void axl_tick() {
     xfilter->filter(x);
     yfilter->filter(y);
     zfilter->filter(z);
-    int now = millis();
-    Serial.print(x);
-    Serial.print('\t');
-    Serial.print(y);
-    Serial.print('\t');
-    Serial.println(z);
-    Serial.println(now-start);
-    start = now;
   }
 }
 
