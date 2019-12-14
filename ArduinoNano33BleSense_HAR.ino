@@ -27,9 +27,9 @@ void setup() {
   while (!Serial);
   while (!IMU.begin());
   task_axl = thread_axl.every(int(1000 / axl_fs), axl_tick);
-  xfilter = new LPC(axl_fs, 5);
-  yfilter = new LPC(axl_fs, 5);
-  zfilter = new LPC(axl_fs, 5);
+  xfilter = new LPC(axl_fs, fc);
+  yfilter = new LPC(axl_fs, fc);
+  zfilter = new LPC(axl_fs, fc);
 }
 
 void loop() {
