@@ -12,8 +12,6 @@ LPC *xfilter;
 LPC *yfilter;
 LPC *zfilter;
 
-int start = 0;
-
 void axl_tick() {
   float x, y, z;
   if (IMU.accelerationAvailable()) {
